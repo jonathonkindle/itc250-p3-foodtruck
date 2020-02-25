@@ -9,20 +9,24 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>    
+    <head>
+        <?php
+            $cssFile = "styles.css";
+            echo "<link rel='stylesheet' href='" . $cssFile . "'>";
+        ?>   
         <title>P3 Food Truck</title>
     </head>
     <body>
-        <div>
-            <h1>Food Truck</h1>
+        <h1>Food Truck</h1>
+        <div class="container">
             <section>
-                <form action="" method="post">
+                <form class="cardcontainer" action="" method="post">
                     <?php 
                         foreach($items as $item){
-                            echo '<div>	
+                            echo '<div class="itemcard">	
                                         <h3>'.$item->name.'</h3>
                                         <p>'.$item->description.'</p>
-                                        <select name="'.$item->name.'">
+                                        <select class="option" name="'.$item->name.'">
                                                 <option value="0">Qty:</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -38,22 +42,24 @@
                             }
                         }
                     ?>
+                    <div class="break"></div>
                     <div>
-                        <input type="submit" name="calculate" value="Update cart and view your order summary" />
+                        <input class="submit" type="submit" name="calculate" value="Update cart and view your order summary" />
                     </div>   
                 </form>
             </section>
-            <aside>
+            <aside class="summary">
                 <h1>Order Summary<br></h1>
-                    <p>
-                        <?php 
-                                foreach($items as $item){
-                                    if($item->quantity > 0){
-                                        echo $item->name.' : ' . $item->quantity . ' * ' . $item->price . '<br>';
-                                    }
+                <p>
+                    <?php 
+                            foreach($items as $item){
+                                if($item->quantity > 0){
+                                    echo $item->name.' : ' . $item->quantity . ' * ' . $item->price . '<br>';
                                 }
-                        ?>
+                            }
+                    ?>
                 </p>
+                </br>
 
                 <?php
                     $subtotal = $order->getSubtotal($items);
@@ -61,12 +67,15 @@
                     $tax = $order->getTax($items);
                     echo 'Tax: $' . $tax . '<br>';
                     $total = $order->getTotal($items);
-                    echo 'Total: $' . $total . '<br><br>';
+                    echo 'Total: $' . $total . '<br>';
                 ?>
-
-                <a href="">Work Log Link here</a><br /><br />
-                <a href="">GitHub Repo Link here</a>
             </aside>
+        </div>
+        <br>
+        <br>
+        <div class="links">
+            <a class="link" href="">Work Log</a><br /><br />
+            <a class="link" href="">GitHub Repo</a>
         </div>
     </body>
 </html>
