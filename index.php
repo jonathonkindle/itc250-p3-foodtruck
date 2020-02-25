@@ -74,8 +74,8 @@
         <br>
         <br>
         <div class="links">
-            <a class="link" href="">Work Log</a><br /><br />
-            <a class="link" href="">GitHub Repo</a>
+            <a class="https://docs.google.com/document/d/1cD0Mv2bI96WD2bRCjKVr9m_tbRBoMaKd3mjGWuGYjIo/edit" href="">Work Log</a><br /><br />
+            <a class="https://github.com/jonathonkindle/itc250-p3-foodtruck" href="">GitHub Repo</a>
         </div>
     </body>
 </html>
