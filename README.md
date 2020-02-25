@@ -8,5 +8,5 @@ Food Truck is a PHP application that allows a user to select items from a menu a
 
 Martin Freiwald
 Jonathon Kindle
-Daphne Lu
+Daphne Lu [daphnelyq@gmail.com]
 Gene Rocha [gene@generocha.com]
