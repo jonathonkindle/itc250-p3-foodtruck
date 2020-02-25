@@ -8,37 +8,32 @@
 }
 
 html { 
-    background: url(foodbg.jpg) no-repeat center center fixed; 
+    background: url(images/foodbg.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
   }
 
-/* body h1 {
+body h1 {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 10px;
-} */
-
-body {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .container {
     display: flex;
     flex-flow: row;
+    flex-wrap: wrap;
     justify-content: center;
     margin: auto;
     width: fit-content;
     max-width: 80%;
-    border: 0px solid rgba(255, 255, 255, 0);
+    background: rgba(197, 100, 20, 0.664);
+    border: 0px solid rgba(197, 100, 20, 0.664);
     border-radius: 5px;
-    box-shadow: -2px -2px 2px 2px rgba(255, 255, 255, 0.5),
-    2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: -2px -2px 3px 3px rgba(255, 255, 255, 0.5),
+    2px 2px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
 .cardcontainer {
@@ -47,6 +42,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    padding: 20px;
 }
 
 .itemcard {
@@ -55,7 +51,7 @@ body {
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.5) inset,
+    background: rgba(216, 224, 94, 0.712);
 }
 
 .break {
@@ -70,20 +66,34 @@ body {
     margin: 10px 0px 10px 0px;
 }
 
+.option {
+    margin-top: 10px;
+    background: rgba(234, 235, 234, 0.842);
+}
+
 .submit:hover, .option:hover {
     cursor: pointer;
 }
 
 .summary {
-    min-width: 200px;
-    max-width: 200px;
+    min-width: 220px;
+    max-width: 220px;
     padding-right: 20px;
     padding-left: 20px;
     margin-left: 0px;
 }
 
 .links {
+    border: 0px solid rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    background: rgba(234, 235, 234, 0.842);
+    box-shadow: -2px -2px 3px 3px rgba(234, 235, 234, 0.5),
+    2px 2px 3px 3px rgba(0, 0, 0, 0.5);
     text-align: center;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
 }
 
 .links a {

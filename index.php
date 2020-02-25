@@ -10,6 +10,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <?php
             $cssFile = "styles.css";
             echo "<link rel='stylesheet' href='" . $cssFile . "'>";
@@ -27,7 +29,7 @@
                                         <h3>'.$item->name.'</h3>
                                         <p>'.$item->description.'</p>
                                         <select class="option" name="'.$item->name.'">
-                                                <option value="0">Qty:</option>
+                                                <option value="0">QTY</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -74,8 +76,8 @@
         <br>
         <br>
         <div class="links">
-            <a class="" href="https://docs.google.com/document/d/1cD0Mv2bI96WD2bRCjKVr9m_tbRBoMaKd3mjGWuGYjIo/edit">Work Log</a><br /><br />
-            <a class="" href="https://github.com/jonathonkindle/itc250-p3-foodtruck">GitHub Repo</a>
+            <a class="link" href="https://docs.google.com/document/d/1cD0Mv2bI96WD2bRCjKVr9m_tbRBoMaKd3mjGWuGYjIo/edit">Work Log</a><br /><br />
+            <a class="link" href="https://github.com/jonathonkindle/itc250-p3-foodtruck">GitHub Repo</a>
         </div>
     </body>
 </html>
